@@ -3,6 +3,9 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function sendForm() {
+    document.getElementById("demo").innerHTML = "<h1>Paragraph changed.</h1>";
+}
 
 (function() {
 
@@ -105,7 +108,7 @@
 		})();
 
 	// Signup Form.
-		(function() {
+		/*(function() {
 
 			// Vars.
 				var $form = document.querySelectorAll('#signup-form')[0],
@@ -169,6 +172,6 @@
 
 				});
 
-		})();
+		})();*/
 
 })();
