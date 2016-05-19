@@ -29,10 +29,10 @@
 				<h3 id="write">Заполните форму и мы вам перезвоним:</h3>
 			</header>
 
-		<!-- Signup Form--> 
+		<!-- Signup Form-->
 			<form id="signup-form" method="POST" action="post.php" name="text_form">
-				<input type="text" name="name" id="email"  placeholder="Имя" required />
-				<input type="text" name="phone" id="email"  placeholder="Номер" required/>
+				<input type="text" name="name" id="email"  placeholder="Имя" required pattern="[-A-Za-zА-Яа-я]{1,20}"/>
+				<input type="text" name="phone" id="email"  placeholder="Номер" required pattern="[0-9+]{10,13}"/>
 				<input type="submit" value="Отправить" />
 			</form>
 
