@@ -55,8 +55,8 @@
 							<section>
 								<p>
 									<form method="POST" action="send.php" name="text_form">
-										<p><input type="text" name="name" id="email"  placeholder="Имя" required /></p>
-										<p><input type="text" name="phone" id="email"  placeholder="Номер" required /></p>
+										<p><input type="text" name="name" id="email"  placeholder="Имя" required pattern="[A-Za-zА-Яа-я]{1,20}"/></p>
+										<p><input type="text" name="phone" id="email"  placeholder="Номер" required pattern="[0-9+]{10,13}"/></p>
 										<p><input type="submit" value="Отправить" /></p>
 									</form>
 								</p>
