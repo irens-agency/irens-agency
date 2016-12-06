@@ -5,73 +5,96 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>IRENS - Contacts</title>
-		<link rel="shortcut icon" type="image/x-icon" href="../images/icon.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
-		<!-- Header -->
-			<header id="header">
-				<h1>Контакты</h1>
-				<a href="../info/map.html#map-sec"><img src="images/map.png" width="23" height="23"/>  г. Одесса, ул. Пушкинская 32, офис 45.</a><br/>
-				<a href="../info/map.html#kiev"><img src="images/map.png" width="23" height="23"/>  г. Киев, ул. Шота Руставели 39/41, офис 110.</a><br/>
-				<img src="images/phone.png" width="23" height="23"/> +380732350777 - директор агентства Сергей<br/>
-				<img src="images/phone.png" width="23" height="23"/> +380506460617 - директор агентства Сергей<br/>
-				<img src="images/phone.png" width="23" height="23"/> +380939198863 - администратор Ирина<br/>
-				<img src="images/mail.png" width="23" height="23"/> irensagency@mail.ru<br/>
-				<img src="images/skype.png" width="23" height="23"/> irens_agency <br/>
-				</p>
-				<h3 id="write">Заполните форму и мы вам перезвоним:</h3>
-			</header>
+<head>
+    <title>IRENS - Contacts</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.ico">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <h1>Контакты</h1>
+    <a href="../info/map.html#map-sec"><img src="images/map.png" width="23" height="23"/> г. Одесса, ул. Пушкинская 32,
+        офис 45.</a><br/>
+    <a href="../info/map.html#kiev"><img src="images/map.png" width="23" height="23"/> г. Киев, ул. Шота Руставели
+        39/41, офис 110.</a><br/>
+    <img src="images/phone.png" width="23" height="23"/> +380732350777 - директор агентства Сергей (Одесса)<br/>
+    <img src="images/phone.png" width="23" height="23"/> +380506460617 - директор агентства Сергей (Одесса)<br/>
+    <img src="images/phone.png" width="23" height="23"/> +380635330777 - администратор Ирина (Киев)<br/>
+    <img src="images/phone.png" width="23" height="23"/> +380964462931 - администратор Ирина (Киев)<br/>
+    <img src="images/mail.png" width="23" height="23"/> irensagency@mail.ru<br/>
+    <img src="images/skype.png" width="23" height="23"/> irens_agency <br/>
+    </p>
+    <h3 id="write">Заполните форму и мы вам перезвоним:</h3>
+</header>
 
-		<!-- Signup Form-->
-			<form id="signup-form" method="POST" action="post.php" name="text_form">
-				<input type="text" name="name" id="email"  placeholder="Имя" required pattern="[-A-Za-zА-Яа-я]{1,20}"/>
-				<input type="text" name="phone" id="email"  placeholder="Номер" required pattern="[0-9+]{10,13}"/>
-				<p><input type="text" name="network" id="email"  placeholder="Ссылка на анкету в соцсетях"/></p>
-				<input type="submit" value="Отправить" />
-			</form>
+<!-- Signup Form-->
+<form id="signup-form" method="POST" action="post.php" name="text_form" enctype="multipart/form-data"
+      style="display: block">
+    <div style="display: flex; padding-bottom: 1em">
+        <input type="text" name="name" id="email" placeholder="Имя" required pattern="[-A-Za-zА-Яа-я]{1,20}"/>
+        <input type="text" name="phone" id="email" placeholder="Номер" required pattern="[0-9+]{10,13}"/>
+    </div>
+    <div>
+        <label class="fileContainer">
+            Загрузите несколько своих фото
+            <input type="file" name="upload-file[]" id="upload-file" accept="image/jpeg,image/png,image/gif" multiple
+                   required>
+        </label>
+        <input type="submit" value="Отправить"/>
+    </div>
+</form>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<!--<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>-->
-				<ul class="copyright">
-					<li><a href="../index.html">Главная</a></li>
-					<li><a href="../info/about.html#sec-one">О нас</a></li>
-					<li><a href="../info/service.html#step">Услуги</a></li>
-					<li><a href="../info/faq.html#faqsec">FAQ</a></li>
-					<li><a href="../forman.html">For man / Для мужчин</a></li>
-					<li><a href="../info/work.html#worksec">Вакансии</a></li>
-					<li>&copy; All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+<!-- Footer -->
+<footer id="footer">
+    <!--<ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+    </ul>-->
+    <ul class="copyright">
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../info/about.html#sec-one">О нас</a></li>
+        <li><a href="../info/service.html#step">Услуги</a></li>
+        <li><a href="../info/faq.html#faqsec">FAQ</a></li>
+        <li><a href="../forman.html">For man / Для мужчин</a></li>
+        <li><a href="../info/work.html#worksec">Вакансии</a></li>
+        <li>&copy; All rights reserved.</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</footer>
 
-		<!-- Scripts -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Scripts -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-			ga('create', 'UA-80211435-1', 'auto');
-			ga('send', 'pageview');
+    ga('create', 'UA-80211435-1', 'auto');
+    ga('send', 'pageview');
 
-		</script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/jquery.min"></script>
+</script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min"></script>
 
-	</body>
+</body>
 </html>
