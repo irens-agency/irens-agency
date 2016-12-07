@@ -18,14 +18,15 @@ $headers = "Обратная связь IRENS: $from";
 
 $email->CharSet = "UTF-8";
 $email->From = $from;
-$email->FromName = 'Замануха';
+$email->FromName = 'IRENS ОБРАТНАЯ СВЯЗЬ';
 $email->Subject = $subject;
 
-$message .= "\n\nИмя Фамилия: $_POST[name]\n\nТелефон: $_POST[phone]";
+$message .= "\n\nИмя Фамилия: $_POST[name]\n\nТелефон: $_POST[phone]\n\nВозраст: $_POST[age]\n\nГород: $_POST[city]";
 $email->Body = $message;
 
 $email->addAddress('irensagency@mail.ru');
-$uploads_dir = '/home/localhost/www/irens/temp';
+//$uploads_dir = '/home/localhost/www/irens/temp';
+$uploads_dir = '/home/llakfvhq/irens.com.ua/temp';
 
 $name = '';
 
