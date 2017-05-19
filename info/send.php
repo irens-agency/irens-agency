@@ -4,13 +4,13 @@ require_once('../PHPMailer/class.phpmailer.php');
 /*require '../PHPMailer/PHPMailerAutoload.php';*/
 /*$header = "From: \"Обратная связь IRENS\" <irens.com.ua>\n";
 $header .= "Content-type: text/plain; charset=\"utf-8\"";
-mail("irensagency@mail.ru", "Обратная связь", "Имя: $_POST[name] \nТелефон: $_POST[phone] \nСоциальные сети: $_POST[network]", $header);
+mail("agency@irens.com.ua", "Обратная связь", "Имя: $_POST[name] \nТелефон: $_POST[phone] \nСоциальные сети: $_POST[network]", $header);
 header('Location: thankyou.html#thanks');*/
 
 $email = new PHPMailer;
 
 // email fields: to, from, subject, and so on
-$to = 'irensagency@mail.ru';
+$to = 'agency@irens.com.ua';
 $from = 'agency-w@yandex.ru';
 $subject = "Обратная связь IRENS";
 $message = "";
@@ -24,7 +24,7 @@ $email->Subject = $subject;
 $message .= "\n\nИмя Фамилия: $_POST[name]\n\nТелефон: $_POST[phone]\n\nВозраст: $_POST[age]\n\nГород: $_POST[city]";
 $email->Body = $message;
 
-$email->addAddress('irensagency@mail.ru');
+$email->addAddress('agency@irens.com.ua');
 //$uploads_dir = '/home/localhost/www/irens/temp';
 $uploads_dir = '/home/llakfvhq/irens.com.ua/temp';
 
